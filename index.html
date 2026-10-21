@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiss Alps | Portrait Photography</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #101820;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1531366936337-7c912a4589a7")
+        center/cover no-repeat;
+}
+
+/* CONTENT */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    max-width: 850px;
+    animation: fadeIn 2s ease;
+}
+
+.subtitle {
+    letter-spacing: 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e4d5b7;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(45px, 8vw, 95px);
+    font-weight: normal;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    text-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #eeeeee;
+    max-width: 600px;
+    margin: auto;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background: #c9a66b;
+    margin: 30px auto;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background: white;
+    color: #111;
+}
+
+/* INFO */
+.info {
+    background: #101820;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-family: Arial, sans-serif;
+    color: #b9c1c8;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #87929a;
+    border-top: 1px solid #26333d;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    .subtitle {
+        letter-spacing: 4px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="content">
+
+        <div class="subtitle">
+            Switzerland · Swiss Alps · 2026
+        </div>
+
+        <h1>
+            Beyond<br>
+            The Mountains
+        </h1>
+
+        <div class="line"></div>
+
+        <p class="description">
+            A timeless portrait in the heart of the Swiss Alps.
+            Surrounded by endless snow, breathtaking landscapes,
+            and the majestic beauty of Mount Matterhorn.
+        </p>
+
+        <a href="#story" class="button">
+            EXPLORE THE MOMENT
+        </a>
+
+    </div>
+
+</section>
+
+<section class="info" id="story">
+
+    <h2>The Beauty of Matterhorn</h2>
+
+    <div class="line"></div>
+
+    <p>
+        Standing beneath the majestic peaks of the Swiss Alps,
+        wearing a bold red winter jacket against a breathtaking
+        white landscape. Captured in soft golden morning light,
+        this moment celebrates the beauty of nature and adventure.
+    </p>
+
+</section>
+
+<footer class="footer">
+    SWISS ALPS PHOTOGRAPHY · MATTERHORN
+</footer>
+
+</body>
+</html>
